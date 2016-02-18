@@ -3,41 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <title>Hello Node!</title>
+    <link rel="stylesheet" href="/vendors/bootstrap.min.css" />
     <script type="text/javascript" src="/vendors/jquery.min.js"></script>
     <script type="text/javascript" src="/scripts/clientapp.js"></script>
-    <link rel="stylesheet" href="/views/stylesheet.css" />
+    <link rel="stylesheet" href="/styles/stylesheet.css" />
 </head>
-<div>
-    <h2>Welcome</h2>
-    <div class="enter-people">
-        <form id="postName">
-            <label for="first-name">First Name: </label>
-            <input type="text" id="first-name" name="first-name" />
-            <label for="first-name">Last Name: </label>
-            <input type="text" id="last-name" name="last-name" />
-            <button id="post-name">Post Name!</button>
-        </form>
+<body>
+    <div class="jumbotron text-center">
+        <h2>Animal Assigner</h2>
     </div>
-    <div class="enter-animal">
-        <form id="postAnimal">
-            <label for="animal-name">Spirit Animal Name: </label>
-            <input type="text" id="animal-name" name="animal-color" />
-            <label for="animal-color">Spirit Animal Color: </label>
-            <input type="text" id="animal-color" name="animal-color" />
-            <button id="post-animal">Post Animal!</button>
-        </form>
-    </div>
-    <div class="people-list">
-        //Reference Tuesday homework plus two new inputs
-        //Once people are assigned an animal, name is removed from this div and move to .assigned-list
-    </div>
+    <div class="container-fluid">
+        <div class="enter-people panel panel-default sit-left text-center">
+            <div class="panel-heading">
+                <h3 class="panel-title">Person</h3>
+            </div>
+            <form id="postName">
+                <div class="form-group panel-body">
+                    <label for="first-name">First Name: </label>
+                    <input type="text" id="first-name" name="first-name" class="form-control" />
+                </div>
+                <div class="form-group panel-body">
+                    <label for="first-name">Last Name: </label>
+                    <input type="text" id="last-name" name="last-name" class="form-control" />
+                </div>
+                <button id="post-name" class="form-actions btn btn-primary">Post Name!</button>
+            </form>
+        </div>
+        <div class="enter-animal panel panel-default sit-right text-center">
+            <div class="panel-heading">
+                <h3 class="panel-title">Animal</h3>
+            </div>
+            <form id="postAnimal">
+                <div class="form-group panel-body">
+                    <label for="animal-name">Spirit Animal Name: </label>
+                    <input type="text" id="animal-name" name="animal-color" class="form-control" />
+                </div>
+                <div class="form-group panel-body">
+                    <label for="animal-color">Spirit Animal Color: </label>
+                    <input type="text" id="animal-color" name="animal-color" class="form-control" />
+                </div>
+                <button id="post-animal" class="form-actions btn btn-primary">Post Animal!</button>
+            </form>
+        </div>
+        <div class="people-list panel panel-default sit-left text-center">
+            <div class="panel-heading">
+                <h3 class="panel-title">People List</h3>
+            </div>
+            <div class="form-group panel-body">
+            <!-- Reference Tuesday homework plus two new inputs -->
+            <!-- Once people are assigned an animal, name is removed from this div and move to .assigned-list -->
+            </div>
+        </div>
 
-    <div class="animal-list">
-        //Reference Tuesday homework
+        <div class="animal-list panel panel-default sit-right text-center">
+            <div class="panel-heading">
+                <h3 class="panel-title">Animal List</h3>
+            </div>
+            <div class="form-group panel-body">
+            <!-- Reference Tuesday homework -->
+            </div>
+        </div>
     </div>
-
-    <div class="assigned-list">
-        //people assigned with animals are moved here
+    <div class="assigned-list text-center">
+        <!-- people assigned with animals are moved here -->
     </div>
 </body>
 </html>
